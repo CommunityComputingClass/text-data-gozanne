@@ -54,7 +54,6 @@ function draw() {
   strokeWeight(4)
   background(200)
   
-  balloons[balloons.length - 1].follow()
   for (let b = 0; b < (balloons.length - 1); b++) {
     balloons[b].lagCheck();
     balloons[b].float();
@@ -62,7 +61,9 @@ function draw() {
 
   if (keyIsPressed == true) {
     balloons.push(new balloon(random(0, 400), 400));
-  }
+  }g
+
+  balloons[balloons.length - 1].follow()
 
   i --
   title()
