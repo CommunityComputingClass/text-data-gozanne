@@ -61,7 +61,7 @@ function draw() {
 
   if (keyIsPressed == true) {
     balloons.push(new balloon(random(0, 400), 400));
-  }g
+  }
 
   balloons[balloons.length - 1].follow()
 
@@ -86,7 +86,7 @@ function title() {
   fill("blue")
   textFont(font2)
   textAlign(CENTER, CENTER)
-  textSize(40)
+  textSize(50)
   text("Happy Birthday!", (screenWidth/2), i);
 }
 
@@ -95,6 +95,6 @@ function message() {
   fill("blue")
   textFont(font2)
   textAlign(CENTER, CENTER)
-  textSize(20)
+  textSize(30)
   text("Click or use Spacebar to create more balloons!", (screenWidth/2), (i+100));
 }
