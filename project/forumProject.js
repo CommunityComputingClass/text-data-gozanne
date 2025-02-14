@@ -1,7 +1,6 @@
 let myQuestion = "When is your birthday?"
 let textDefault = ""
 
-
 let contents = "";
 let all_the_answers = []
 
@@ -10,7 +9,7 @@ let showAnswers_button;
 let textBox; 
 
 function deleter() {
-    all_the_answers.pop
+    //all_the_answers.pop
 }
 
 class response {
@@ -35,11 +34,6 @@ class response {
     
     
 }
-
-
-
-
-
 
 function setup() {
     createCanvas(400, 400);
@@ -69,7 +63,7 @@ function saveText(){
     all_the_answers.push(new response(all_the_answers.length, contents));
     contents = "" ;
     textBox.value(textDefault)
-    print(all_the_answers)   
+    //print(all_the_answers)   
 }
 
 function storeText(){
